@@ -1,0 +1,123 @@
+.main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comicDetail {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.imageContainer {
+  width: 50%;
+  height: 55vw;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  background-color: #518cca;
+  width: 50%;
+  height: 55vw;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+}
+
+.title {
+  font-size: 5rem;
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+}
+
+.creators,
+.stories {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+  }
+}
+
+.name {
+  list-style-type: none;
+  font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.detailtitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 6rem;
+  text-transform: capitalize !important;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+  background-color: #e23636;
+  width: 100%;
+
+  @media (max-width: 768px) {
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+}
+
+.h3 {
+  font-size: 3rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.paginatorbutton {    
+  font-size: 2rem;
+  background-color: #e23636;
+  border-radius: var(--border-radius);
+  width: 7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid white
+}
+@media (hover: hover) and (pointer: fine) {
+  .paginatorbutton:hover {
+    transition-delay: 250ms;
+    transition-property: opacity;
+    opacity: 0.5;
+  }
+}
